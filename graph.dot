@@ -1,0 +1,11 @@
+digraph {
+      label="Fig 1 : widing and narrowing primitive conversation"
+    fontname="Courier"
+    rankdir=LR
+   byte , short ,char, int , long ,  float, double [shape=none, fontsize=15, fontcolor=black,fontname=Courier]
+  byte -> short -> int-> long -> float->double [arrowsize= 0.5, color= blue4]
+  char -> int  [arrowsize= 0.5, color= blue4]
+  double-> float -> long -> int -> short -> byte [arrowsize= 0.5, color=goldenrod4]
+  int -> char  [arrowsize= 0.5, color= goldenrod4]
+  {rank=same; short,char}
+}
